@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 탐험가의 모험 지도</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @media print {
+            body {
+                font-family: 'Malgun Gothic', 'NanumGothic', sans-serif;
+                font-size: 11pt;
+                line-height: 1.6;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            .no-print {
+                display: none;
+            }
+            .print-only {
+                display: block;
+            }
+            .material-section {
+                border: 1px solid #ccc !important;
+                box-shadow: none !important;
+                background-color: #ffffff !important;
+                padding: 1rem !important;
+                margin-bottom: 1.5rem !important;
+            }
+            .section-heading {
+                border-bottom: 1px solid #000 !important;
+                padding-bottom: 0.5rem !important;
+                margin-bottom: 1rem !important;
+                font-size: 1.25rem !important;
+            }
+            .page-break {
+                page-break-before: always;
+            }
+        }
+        @page {
+            size: A4;
+            margin: 1cm;
+        }
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #F0F4F8;
+        }
+        .dotted-border {
+            border: 2px dashed #D1D5DB;
+            padding: 1rem;
+            border-radius: 0.5rem;
+        }
+        .tech-text {
+            letter-spacing: -0.05em;
+        }
+    </style>
+</head>
+<body class="p-6 md:p-12">
+    <div class="max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-lg shadow-lg">
+        <div class="bg-gradient-to-r from-blue-500 to-blue-700 text-white p-6 rounded-t-lg -mx-8 -mt-8 mb-6 flex flex-col items-center">
+            <h1 class="text-4xl font-bold text-center">AI 탐험가의 모험 지도 🗺️</h1>
+            <p class="text-sm mt-2 text-blue-100">인공지능의 세계를 함께 탐험해봐요!</p>
+        </div>
+
+        <div class="dotted-border mb-8">
+            <div class="flex flex-col md:flex-row md:justify-between items-center text-sm text-gray-700 space-y-2 md:space-y-0 md:space-x-4">
+                <p>
+                    <span class="font-bold">반:</span>
+                    <span class="border-b-2 border-gray-400 w-12 inline-block"></span>
+                </p>
+                <p>
+                    <span class="font-bold">번호:</span>
+                    <span class="border-b-2 border-gray-400 w-12 inline-block"></span>
+                </p>
+                <p>
+                    <span class="font-bold">이름:</span>
+                    <span class="border-b-2 border-gray-400 w-24 inline-block"></span>
+                </p>
+            </div>
+        </div>
+
+        <section class="mb-10 p-6 bg-blue-50 rounded-lg border border-blue-200">
+            <h2 class="text-xl font-bold mb-4 text-blue-700">1. 인공지능, 너는 누구니?</h2>
+            <p class="text-base leading-relaxed text-gray-800">
+                인공지능(AI)은 인간의 (                 )을 (                 )으로 구현한 기술 또는 그 연구 분야를 의미합니다. 인간의 지능은 (       ), (       ), (       )과 같이 지식을 활용하는 능력을 의미하는데요. 인공지능은 많은 양의 데이터를 이용하여 지식을 얻고, 인간의 지능을 모방하여 작동합니다.
+            </p>
+        </section>
+
+        <section class="mb-10 p-6 bg-blue-50 rounded-lg border border-blue-200">
+            <h2 class="text-xl font-bold mb-4 text-blue-700">2. 인공지능의 대표적인 세 가지 특징</h2>
+            <table class="w-full border-collapse bg-white">
+                <thead>
+                    <tr class="bg-blue-100">
+                        <th class="border border-blue-200 p-2 font-bold text-sm w-1/4 text-blue-700 align-middle text-center">인공지능의 특징</th>
+                        <th class="border border-blue-200 p-2 font-bold text-sm text-blue-700 align-middle text-center">구체적인 설명</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="border border-blue-200 p-4 font-bold text-blue-600 align-middle text-center text-sm">인식</td>
+                        <td class="border border-blue-200 p-4 text-gray-800 text-left text-sm">
+                            센서를 이용해 이미지, 소리 등의 정보를 (        )받고, 이를 해석하여 (        )하는 기능.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="border border-blue-200 p-4 font-bold text-blue-600 align-middle text-center text-sm">학습</td>
+                        <td class="border border-blue-200 p-4 text-gray-800 text-left text-sm">
+                            주어진 데이터를 (        )하여 데이터 간의 특징이나 (        )을 찾아 스스로 학습하는 기능.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="border border-blue-200 p-4 font-bold text-blue-600 align-middle text-center text-sm">예측</td>
+                        <td class="border border-blue-200 p-4 text-gray-800 text-left text-sm">
+                            학습한 데이터의 (        )이나 규칙을 바탕으로, 새로운 데이터가 입력되었을 때의 (        )를 예측하는 기능.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="mb-10 p-6 bg-blue-50 rounded-lg border border-blue-200">
+            <h2 class="text-xl font-bold mb-4 text-blue-700">3. 인공지능 세부 기술과 연결하기</h2>
+            <p class="text-base text-gray-700 mb-4">
+                아래에 제시된 인공지능 세부 기술과 설명을 올바르게 선으로 연결해 보세요.
+            </p>
+            <div class="grid grid-cols-[1fr_2fr] gap-x-12 text-xs md:text-sm">
+                <div class="flex flex-col space-y-4 pr-4">
+                    <div class="flex justify-end items-center space-x-2 h-10">
+                        <span class="tech-text">인식 및 인지 기술</span>
+                        <span class="w-2 h-2 rounded-full bg-gray-400"></span>
+                    </div>
+                    <div class="flex justify-end items-center space-x-2 h-10">
+                        <span class="tech-text">시각 이해 기술</span>
+                        <span class="w-2 h-2 rounded-full bg-gray-400"></span>
+                    </div>
+                    <div class="flex justify-end items-center space-x-2 h-10">
+                        <span class="tech-text">학습 및 추론 기술</span>
+                        <span class="w-2 h-2 rounded-full bg-gray-400"></span>
+                    </div>
+                    <div class="flex justify-end items-center space-x-2 h-10">
+                        <span class="tech-text">언어 이해 기술</span>
+                        <span class="w-2 h-2 rounded-full bg-gray-400"></span>
+                    </div>
+                    <div class="flex justify-end items-center space-x-2 h-10">
+                        <span class="tech-text">상황 이해 기술</span>
+                        <span class="w-2 h-2 rounded-full bg-gray-400"></span>
+                    </div>
+                </div>
+                <div class="flex flex-col space-y-4 pl-4">
+                    <div class="flex items-center space-x-2 h-10">
+                        <span class="w-2 h-2 rounded-full bg-gray-400"></span>
+                        <span class="tech-text">사용자 기록을 바탕으로 도움과 편의를 제공하는 기술</span>
+                    </div>
+                    <div class="flex items-center space-x-2 h-10">
+                        <span class="w-2 h-2 rounded-full bg-gray-400"></span>
+                        <span class="tech-text">사람의 표정이나 행동을 보고 기분/감정을 추측하는 기술</span>
+                    </div>
+                    <div class="flex items-center space-x-2 h-10">
+                        <span class="w-2 h-2 rounded-full bg-gray-400"></span>
+                        <span class="tech-text">축적된 데이터를 바탕으로 새로운 데이터 결과를 예측하는 기술</span>
+                    </div>
+                    <div class="flex items-center space-x-2 h-10">
+                        <span class="w-2 h-2 rounded-full bg-gray-400"></span>
+                        <span class="tech-text">영상 데이터에서 특정한 정보를 찾아내는 기술</span>
+                    </div>
+                    <div class="flex items-center space-x-2 h-10">
+                        <span class="w-2 h-2 rounded-full bg-gray-400"></span>
+                        <span class="tech-text">일상 언어를 학습하고 분석하여 처리하는 기술</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <div class="page-break"></div>
+
+        <section class="mb-8 p-6 bg-blue-50 rounded-lg border border-blue-200">
+            <h2 class="text-xl font-bold mb-4 text-blue-700">4. 우리만의 인공지능 제품/서비스 만들기</h2>
+            <p class="text-gray-700 mb-4">
+                교과서 13페이지의 인공지능과 관련한 세부 기술 중 하나 이상을 선택하여 우리 주변에 불편한 문제를 해결할 수 있는 '나만의 인공지능 제품 또는 서비스'를 구상해봅시다.
+            </p>
+            <ul class="list-disc list-inside space-y-2 mb-4">
+                <li>제품/서비스명:</li>
+                <li>적용된 인공지능 기술(교과서 13페이지 참고):</li>
+            </ul>
+            <div class="mt-8">
+                <h3 class="text-lg font-semibold mb-2 text-blue-700">그림 구현 칸:</h3>
+                <div class="border-2 border-dashed border-gray-400 rounded-lg h-[36rem] p-4 bg-white text-gray-400 flex flex-col items-center justify-center">
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
